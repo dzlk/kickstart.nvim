@@ -1,3 +1,6 @@
+-- Neotree
+vim.keymap.set('n', '<C-n>', ':Neotree filesystem toggle float<CR>')
+
 -- Tabs
 vim.keymap.set('n', '<C-x>', vim.cmd.tabclose, { desc = 'Close current tab' })
 
