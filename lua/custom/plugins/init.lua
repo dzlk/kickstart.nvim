@@ -15,4 +15,18 @@ return {
       require('alpha').setup(startify.config)
     end,
   },
+
+  {
+    'mistweaverco/kulala.nvim',
+    ft = { 'http', 'rest' },
+    opts = {
+      global_keymaps = true,
+      global_keymaps_prefix = '<leader>R',
+    },
+  },
+
+  {
+    'mistweaverco/bafa.nvim',
+    version = 'v1.7.1',
+  },
 }

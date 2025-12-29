@@ -9,3 +9,6 @@ for i = 1, 4 do
     vim.cmd('tabn ' .. i)
   end, { desc = 'Switch to ' .. i .. ' tab' })
 end
+
+-- Bafa
+vim.keymap.set('n', '<C-b>', ":lua require('bafa.ui').toggle()<CR>")
