@@ -25,6 +25,7 @@ return {
     end,
   },
 
+  -- http client
   {
     'mistweaverco/kulala.nvim',
     ft = { 'http', 'rest' },
@@ -34,8 +35,23 @@ return {
     },
   },
 
+  -- buffer manager
   {
     'mistweaverco/bafa.nvim',
     version = 'v1.7.1',
+  },
+
+  -- gamification
+  {
+    'gisketch/triforce.nvim',
+    dependencies = { 'nvzone/volt' },
+    config = function()
+      require('triforce').setup {
+        -- Optional: Add your configuration here
+        keymap = {
+          show_profile = '<leader>tp', -- Open profile with <leader>tp
+        },
+      }
+    end,
   },
 }
