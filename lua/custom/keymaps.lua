@@ -11,4 +11,7 @@ for i = 1, 4 do
 end
 
 -- Bafa
-vim.keymap.set('n', '<C-b>', ":lua require('bafa.ui').toggle()<CR>")
+vim.keymap.set('n', '<C-S-b>', ":lua require('bafa.ui').toggle()<CR>")
+
+-- ZenMode
+vim.keymap.set('n', '<leader>Z', ':ZenMode<CR>', { desc = 'Toggle zen mode' })
