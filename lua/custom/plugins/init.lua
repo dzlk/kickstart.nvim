@@ -26,14 +26,14 @@ return {
   },
 
   -- http client
-  {
-    'mistweaverco/kulala.nvim',
-    ft = { 'http', 'rest' },
-    opts = {
-      global_keymaps = true,
-      global_keymaps_prefix = '<leader>R',
-    },
-  },
+  -- {
+  --   'mistweaverco/kulala.nvim',
+  --   ft = { 'http', 'rest' },
+  --   opts = {
+  --     global_keymaps = true,
+  --     global_keymaps_prefix = '<leader>R',
+  --   },
+  -- },
 
   -- buffer manager
   {
@@ -54,6 +54,14 @@ return {
       }
     end,
   },
+
+  -- typing
+  -- {
+  --   'nvzone/typr',
+  --   dependencies = 'nvzone/volt',
+  --   opts = {},
+  --   cmd = { 'Typr', 'TyprStats' },
+  -- },
 
   -- zen
   {
